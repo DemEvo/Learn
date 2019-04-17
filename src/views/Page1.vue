@@ -4,8 +4,15 @@
         Тут у нас какой то текст
 
 
+
         <child-page1>
         </child-page1>
+
+        <DivFlexWrap>
+            И тут у нас какой то текст
+
+        </DivFlexWrap>
+            <!--<section-content></section-content>-->
 
     </div>
 
@@ -19,7 +26,9 @@
         name: "Page1",
         props: [],
         components: {
-            ChildPage1
+            ChildPage1,
+//            SectionHeader,
+//            SectionContent
         },
         data()
         {

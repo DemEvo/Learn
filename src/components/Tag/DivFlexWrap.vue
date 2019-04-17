@@ -1,6 +1,6 @@
 <template>
     <div class="DivFlexWrap">
-        <slot></slot>
+        <slot>Default</slot>
     </div>
 </template>
 
