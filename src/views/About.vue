@@ -1,5 +1,10 @@
 <template>
-  <div class="about">
+  <DivFlexWrap class="about">
     <h1>This is an about page</h1>
-  </div>
+  </DivFlexWrap>
 </template>
+
+<style lang="scss">
+  /*@import "../scss/lib/global-flex.scss";*/
+
+</style>
