@@ -1,7 +1,6 @@
 <template>
     <div class="DivFlexWrap">
         <slot></slot>
-        <slot></slot>
     </div>
 </template>
 
@@ -23,11 +22,11 @@
 
 <style lang="scss">
     .DivFlexWrap {
-        display: flex;
-        flex-flow: row wrap;
-        width: 100%;
-        height: auto;
-        &>h1 {
+        /*display: flex;*/
+        /*flex-flow: row wrap;*/
+        /*width: 100%;*/
+        /*height: auto;*/
+        h1 {
             color: blue;
         }
     }
