@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Page1 from './views/Page1.vue'
 import Test from './views/Test.vue';
+import Bootstrap from './views/Bootstrap.vue';
+
 
 Vue.use(Router)
 
@@ -31,5 +33,11 @@ export default new Router({
             name: 'Test',
             component: Test,
         },
+        {
+            path: '/bootstrap',
+            name: 'Bootstrap',
+            component: Bootstrap,
+        },
+
     ]
 })
