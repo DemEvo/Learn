@@ -6,6 +6,8 @@
             <div class="frow">
                 <div class="logo">Logo</div>
                 <div class="nav">Nav | Nav | Nav</div>
+            </div>
+            <div class="frow">
                 <div class="search">
                     <input class="full-size">
                 </div>
@@ -39,7 +41,9 @@
     .Test {
         * {
             box-sizing: border-box;
+            text-align: center;
         }
+
         button {
             width: 100px;
             height: 30px;
@@ -52,9 +56,16 @@
 
             width: 80%;
             height: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-content: center;
+
             .frow {
                 border: 1px solid red;
-                width: 100%;
+                flex: 1 1 auto;
+                min-width: 50%;
+                max-width: 100%;
                 height: auto;
                 display: flex;
                 flex-flow: row wrap;
@@ -64,37 +75,37 @@
                 .logo {
                     border: 1px solid red;
                     flex: 0 0 auto;
-                    width: 200px;
+                    width: calc(25px * 10.7);
                     height: 50px;
-                    text-align: center;
+                    margin-right: 10px;
                 }
 
                 .nav {
                     border: 1px solid red;
                     flex: 1 0 auto;
-                    max-width: calc(50% - 200px);
-                    min-width: 200px;
-                    height: 50px;
-                    text-align: center;
+                    max-width: 50%;
+                    min-width: calc(50% - 10.7 * 25px);
+                    min-height: 50px;
+                    max-height: auto;
                 }
 
                 .search {
                     border: 1px solid red;
                     flex: 1 1 auto;
                     max-width: 100%;
-                    min-width: 50%;
+                    min-width: calc(50% - 10px);
                     height: 50px;
                     padding: 5px;
 
                     .search-btn {
                         width: inherit;
                         height: inherit;
-                        text-align: center;
                     }
                 }
             }
         }
     }
+
     .full-size {
         width: 100%;
         height: 100%;
