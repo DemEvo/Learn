@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 import Page1 from './views/Page1.vue'
 import Test from './views/Test.vue';
 import Bootstrap from './views/Bootstrap.vue';
-
+import PdfViewers from './views/PdfViewers.vue';
 
 Vue.use(Router)
 
@@ -37,6 +37,11 @@ export default new Router({
             path: '/bootstrap',
             name: 'Bootstrap',
             component: Bootstrap,
+        },
+        {
+            path: '/pdf-viewers',
+            name: 'PdfViewers',
+            component: PdfViewers,
         },
 
     ]
