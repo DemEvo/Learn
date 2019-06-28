@@ -8,6 +8,8 @@
             |
             <router-link to="/page1">Стр 1</router-link>
             |
+            <router-link to="/page2">Стр 2</router-link>
+            |
             <router-link to="/test">Test</router-link>
             |
             <router-link to="/bootstrap">Bootstrap</router-link>
