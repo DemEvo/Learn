@@ -13,6 +13,8 @@
             <router-link to="/bootstrap">Bootstrap</router-link>
             |
             <router-link to="/pdf-viewers">Pdf Viewers</router-link>
+            |
+            <router-link to="/selector">Selector</router-link>
 
         </div>
         <router-view/>
