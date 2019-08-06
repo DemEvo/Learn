@@ -1,5 +1,4 @@
 
-
 .wrap {
   flex-wrap: wrap;
 }
@@ -11,14 +10,61 @@
 .fx00 {
   flex: 0 0 auto;
 }
+
 .fx01 {
   flex: 0 1 auto;
 }
+
 .fx10 {
   flex: 1 0 auto;
 }
+
 .fx11 {
   flex: 1 1 auto;
 }
+
+@mixin flexible($direct, $wrap, $jc, $ai) {
+  display: flex;
+  flex-flow: $direct $wrap;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin margin-x($marg-x) {
+  margin-left: $marg-x;
+  margin-right: $marg-x;
+}
+
+@mixin margin-y($marg-y) {
+  margin-top: $marg-y;
+  margin-bottom: $marg-y;
+}
+
+.mx10 {
+  @include margin-x(10px);
+}
+
+.my5 {
+  @include margin-y(5px);
+}
+
+.centered-elements {
+  @include flexible (row, wrap, center, center);
+  border: 1px solid gray;
+}
+
+@mixin border-radius($radius) {        // Префиксы для:
+  -webkit-border-radius: $radius;    // Chrome и Safari
+  -moz-border-radius: $radius;    // Firefox
+  -ms-border-radius: $radius;    // Internet Explorer
+  -o-border-radius: $radius;    // Opera
+  border-radius: $radius;    // Стандартный CSS
+}
+
+@mixin box($radius){
+  @include border-radius($radius);
+}
+// Пример использования миксина border-radius после его создания
+.box { @include box(10px); }
 
 

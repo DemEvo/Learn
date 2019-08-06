@@ -13,6 +13,10 @@ import diIbFc from '@/components/Tag/diIbFc.vue'
 import diIbFr from '@/components/Tag/diIbFr.vue'
 import '@/scss/lib/global-flex.scss'
 
+import VueAnime from 'vue-animejs';
+
+Vue.use(VueAnime)
+
 Vue.config.productionTip = false;
 
 Vue.component('DivFlexWrap', DivFlexWrap);

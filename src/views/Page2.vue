@@ -20,6 +20,20 @@
             <div class="cont2"></div>
             <div class="fx-spring"></div>
         </div>
+
+        <div class="my-container centered-elements">
+            <div class="my-content mx10 my5">my-content</div>
+            <div class="my-content mx10 my5">my-content</div>
+            <div class="my-content mx10 my5">my-content</div>
+            <div class="my-content mx10 my5">my-content</div>
+            <div class="my-content mx10 my5">my-content</div>
+            <div class="my-content mx10 my5">my-content</div>
+            <div class="my-content mx10 my5">my-content</div>
+            
+        </div>
+        <div v-anime="{ rotate: '1turn', backgroundColor: '#FFF', duration: 2000, loop: true }">
+            ffff
+        </div>
     </div>
 
 </template>
@@ -87,6 +101,17 @@
             }
             .fx-spring {
                 flex: 1 1 auto;
+            }
+        }
+
+        .my-container {
+            margin-top: 100px;
+            width: 100%;
+            height: auto;
+            .my-content {
+                width: 100px;
+                height: 30px;
+                background-color: hsl(80, 80%, 88%);
             }
         }
     }
