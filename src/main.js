@@ -7,6 +7,7 @@ import store from './store'
 import DivFlexWrap from '@/components/Tag/DivFlexWrap.vue'
 import diB from '@/components/Tag/diB.vue'
 import diIb from '@/components/Tag/diIb.vue'
+import diIf from '@/components/Tag/diIf.vue'
 import diFr from '@/components/Tag/diFr.vue'
 import diFc from '@/components/Tag/diFc.vue'
 import diIbFc from '@/components/Tag/diIbFc.vue'
@@ -22,6 +23,7 @@ Vue.config.productionTip = false;
 Vue.component('DivFlexWrap', DivFlexWrap);
 Vue.component('di-b', diB);
 Vue.component('di-ib', diIb);
+Vue.component('di-if', diIf);
 Vue.component('di-fr', diFr);
 Vue.component('di-fc', diFc);
 Vue.component('di-ib-fc', diIbFc);

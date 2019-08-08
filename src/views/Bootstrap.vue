@@ -192,6 +192,51 @@
 <!--            Этот текст должен выходить за текст родительского элемента.-->
 
 <!--        </dib>-->
+
+
+        <di-fr class="Dfr wrap m-3 p-3">
+
+            <di-ib-fc class="fc-X fx00 m-3 mx-auto">
+                <b-button variant="outline-primary m-3 ">
+                    button3
+                </b-button>
+                <b-button variant="outline-primary m-3 ">
+                    button44444444444
+                </b-button>
+            </di-ib-fc>
+
+            <di-ib-fc class="fc-X fx00 m-3 mx-auto">
+                <b-button variant="outline-primary m-3 ">
+                    button55555555555
+                    <br>
+                    button55555555555
+                    <br>
+                    button55555555555
+                    <br>
+                    button55555555555
+                </b-button>
+                <b-button variant="outline-primary m-3 ">
+                    button6
+                </b-button>
+            </di-ib-fc>
+
+
+            <di-ib-fc class="fc-X fx00 m-3 mx-auto">
+                <b-button variant="outline-primary m-3 ">
+                    button7
+                </b-button>
+                <b-button variant="outline-primary m-3 ">
+                    button88888
+                    <br>
+                    button88888
+                    <br>
+                    button88888
+                </b-button>
+            </di-ib-fc>
+
+        </di-fr>
+
+
     </div>
 </template>
 
@@ -217,6 +262,11 @@
     .Bootstrap {
         .Dfr {
             justify-content: center;
+        }
+        .fc-X {
+            height: 100%;
+            min-height: auto;
+            border: 1px solid hsl(30, 100%, 50%);
         }
         .sp {
             border: 1px solid hsl(30, 100%, 50%);

@@ -1,13 +1,13 @@
 <template>
-    <div class="TestChild">
-        <div></div>
+    <div class="TestChild4" @click="childFunc">
+        {{child.countData}}
     </div>
 </template>
 
 <script>
     // import name from "@/components/name"
     export default {
-        name: "TestChild",
+        name: "TestChild4",
         props: ['child'],
         components: {},
         data() {
@@ -15,18 +15,20 @@
         },
         computed: {},
         methods: {
-            childAlert() {
-                alert('Это алерт');
+            childFunc() {
+                this.child.countData = !this.child.countData;
             },
         },
         mounted() {
-            this.child.myFunc = this.childAlert;
+            this.child.myFunc = this.childFunc;
         },
     }
 </script>
 
 <style lang="scss">
-    .TestChild {
-
+    .TestChild4 {
+        border: 1px solid red;
+        width: 100px;
+        height: 50px;
     }
 </style>
