@@ -31,9 +31,9 @@
             <div class="my-content mx10 my5">my-content</div>
             
         </div>
-        <div v-anime="{ rotate: '1turn', backgroundColor: '#FFF', duration: 2000, loop: true }">
-            ffff
-        </div>
+<!--        <div v-anime="{ rotate: '1turn', backgroundColor: '#FFF', duration: 2000, loop: true }">-->
+<!--        ffff-->
+<!--    </div>-->
     </div>
 
 </template>

@@ -61,6 +61,20 @@
                 this.pass = (this.pass === 'password' ? 'text' : 'password');
                 // alert(this.pass);
             },
+            generator(){
+                // сам генератор нужно выносить в статику
+                // и дёогать только вызов
+                function* idCreator(){
+                    let i=0;
+                    let arr=['a','b','c',];
+                    while(true){
+                        i++;
+                        yield arr[i%3];
+                    }
+                }
+                const ids = idCreator();
+                console.log(ids.next().value);
+            },
         },
         mounted() {
 

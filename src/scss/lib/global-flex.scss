@@ -23,6 +23,10 @@
   flex: 1 1 auto;
 }
 
+.brr {
+  border: 1px solid red;
+}
+
 @mixin flexible($direct, $wrap, $jc, $ai) {
   display: flex;
   flex-flow: $direct $wrap;
