@@ -2,37 +2,68 @@
     <div class="Test">
         <button @click="child.myFunc">Alert Child</button>
         <TestChild :child="child"></TestChild>
-        <div class="cont">
-            <div class="frow">
-                <div class="logo">Logo</div>
-                <div class="nav">Nav | Nav | Nav</div>
-            </div>
-            <div class="frow">
-                <div class="search">
-                    <input class="full-size">
-                </div>
-            </div>
-        </div>
+
+        <!--        <div @click="functionEve">functionEve</div>-->
+
+        <TestChild2 :password="parrent">
+            <div>Test Child {{pass}}</div>
+        </TestChild2>
+
+
+        <!--        <div class="cont">-->
+        <!--            <div class="frow">-->
+        <!--                <div class="logo">Logo</div>-->
+        <!--                <div class="nav">Nav | Nav | Nav</div>-->
+        <!--            </div>-->
+        <!--            <div class="frow">-->
+        <!--                <div class="search">-->
+        <!--                    <input class="full-size">-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <TestChild3 :child="childN"></TestChild3>
+        <TestChild4 :child="childN"></TestChild4>
     </div>
 </template>
 
 <script>
     import TestChild from "@/components/TestChild"
-
+    import TestChild2 from "@/components/TestChild2"
+    import TestChild3 from "@/components/TestChild3"
+    import TestChild4 from "@/components/TestChild4"
     export default {
         name: "Test",
         props: [],
-        components: {TestChild},
+        components: {TestChild, TestChild2,TestChild3, TestChild4},
         data() {
             return {
-                child: {
-                    myFunc: null
+                childN: {
+                    countData: 0,
+                    myFunc: null,
                 },
+                child: {
+                    myFunc: null,
+                },
+                parrent: {
+                    pass: 'password',
+                    functionEve() {
+                        this.pass = (this.pass === 'password' ? 'text' : 'password');
+                        // alert(this.pass);
+                    },
+                },
+
             }
         },
         computed: {},
-        methods: {},
+        methods: {
+            functionEve() {
+                this.pass = (this.pass === 'password' ? 'text' : 'password');
+                // alert(this.pass);
+            },
+        },
         mounted() {
+
         },
     }
 </script>

@@ -1,32 +1,27 @@
 <template>
-    <div class="TestChild">
-        <div></div>
+    <div class="di-f">
+        <slot></slot>
     </div>
 </template>
 
 <script>
     // import name from "@/components/name"
     export default {
-        name: "TestChild",
-        props: ['child'],
+        name: "diF",
+        props: [],
         components: {},
         data() {
             return {}
         },
         computed: {},
-        methods: {
-            childAlert() {
-                alert('Это алерт');
-            },
-        },
+        methods: {},
         mounted() {
-            this.child.myFunc = this.childAlert;
         },
     }
 </script>
 
 <style lang="scss">
-    .TestChild {
-
+    .di-f {
+      display: flex;
     }
 </style>
