@@ -31,9 +31,9 @@
             <div class="my-content mx10 my5">my-content</div>
             
         </div>
-        <div v-anime="{ rotate: '1turn', backgroundColor: '#FFF', duration: 2000, loop: true }">
-            ffff
-        </div>
+        <!--<div id="div-anime" v-anime="{ rotate: '1turn', backgroundColor: '#FF0000', duration: 20000, loop: true }">-->
+            <!--ffff-->
+        <!--</div>-->
     </div>
 
 </template>
@@ -50,6 +50,18 @@
         computed: {},
         methods: {},
         mounted(){
+            const targets = '.mx10';
+            this
+                .$anime
+                .timeline()
+                .add({
+                    targets,
+                    translateY: 270,
+                    direction: 'alternate',
+                    iterationCount: 3,
+                    loop: true,
+                    easing: 'easeInOutQuad'
+                });
         },
     };
 </script>
@@ -113,6 +125,9 @@
                 height: 30px;
                 background-color: hsl(80, 80%, 88%);
             }
+        }
+        #div-anime {
+            
         }
     }
 

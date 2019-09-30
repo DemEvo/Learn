@@ -1,10 +1,10 @@
-var el = this.document.getElementById("content");
-var User = /** @class */ (function () {
-    function User(name, age) {
+var User = (function () {
+    function User(name, age, sex) {
         this.name = name;
         this.age = age;
+        this.sex = sex;
     }
     return User;
 }());
-var tom = new User("Том", 29);
-el.innerHTML = "Имя: " + tom.name + " возраст: " + tom.age;
+var tom = new User("Том", 29, 'men');
+//# sourceMappingURL=test-ts.js.map
