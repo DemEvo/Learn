@@ -4,13 +4,16 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "tsc": "tsc",
+    "singleton": "node src/learn/singleton.js"
   },
   "dependencies": {
     "animejs": "^3.1.0",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.13",
+    "global": "^4.4.0",
     "vue": "^2.6.6",
     "vue-animejs": "^2.1.1",
     "vue-instant-pdf-viewer": "^1.0.2",
@@ -25,6 +28,8 @@
     "sass-loader": "*",
     "vue-cli-plugin-bootstrap-vue": "^0.2.0",
     "vue-cli-plugin-pug": "^1.0.7",
-    "vue-template-compiler": "^2.6.6"
+    "vue-template-compiler": "^2.6.6",
+    "ts-loader": "^2.0.3",
+    "typescript": "^3.6.2"
   }
 }
