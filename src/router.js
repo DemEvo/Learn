@@ -5,6 +5,8 @@ import About from './views/About.vue'
 import Page1 from './views/Page1.vue'
 import Page2 from './views/Page2.vue'
 import Page3 from './views/Page3.vue'
+import Page4 from './views/Page4.vue'
+
 import Test from './views/Test.vue'
 import Bootstrap from './views/Bootstrap.vue'
 import PdfViewers from './views/PdfViewers.vue'
@@ -43,6 +45,12 @@ export default new Router({
             name: 'Page3',
             component: Page3
         },
+        {
+            path: '/page4',
+            name: 'Page4',
+            component: Page4
+        },
+
         {
             path: '/test',
             name: 'Test',

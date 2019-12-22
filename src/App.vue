@@ -12,6 +12,8 @@
             |
             <router-link to="/page3">Стр 3</router-link>
             |
+            <router-link to="/page4">Стр 4</router-link>
+            |
             <router-link to="/test">Test</router-link>
             |
             <router-link to="/bootstrap">Bootstrap</router-link>
