@@ -24,11 +24,29 @@
         props: [],
         components: {},
         data() {
-            return {}
+            return {
+                stringsArr: "кришна",
+                //     ["кришна",
+                //     // "кришна", "харе", "харе",
+                //     // "харе",
+                //     "харе",
+                //     "кришна", "кришна",
+                //     ":-O"
+                // ],
+            }
         },
         computed: {},
-        methods: {},
+        methods: {
+            iSIsogram(arr) {
+                let tmp = [];
+                for (let str of arr)
+                    if (!tmp.includes(str))
+                        tmp.push(str);
+                return tmp.length === arr.length;
+            },
+        },
         mounted() {
+            alert("кришна  "+ this.iSIsogram("кришна")); // кришна, харе, :-O
         },
     }
 </script>
@@ -59,6 +77,7 @@
             width: 250px;
             border-radius: 15px 0 0 0;
             overflow: hidden;
+
             .trap {
                 --size: 20px;
                 border-top: 50px solid hsl(20, 100%, 50%);
@@ -67,6 +86,7 @@
                 border-right: var(--size) solid transparent;
                 height: 0;
             }
+
             span {
                 position: absolute;
                 top: 0;
