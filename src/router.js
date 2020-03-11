@@ -5,6 +5,7 @@ import About from './views/About.vue'
 import Page1 from './views/Page1.vue'
 import Page2 from './views/Page2.vue'
 import Page3 from './views/Page3.vue'
+import Promise from './views/Promise Example.vue'
 import Page4 from './views/Page4.vue'
 
 import Test from './views/Test.vue'
@@ -45,6 +46,12 @@ export default new Router({
             name: 'Page3',
             component: Page3
         },
+        {
+            path: '/promise',
+            name: 'Promise',
+            component: Promise
+        },
+
         {
             path: '/page4',
             name: 'Page4',

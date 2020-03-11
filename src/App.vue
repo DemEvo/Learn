@@ -12,6 +12,8 @@
             |
             <router-link to="/page3">Стр 3</router-link>
             |
+            <router-link to="/promise">Промис</router-link>
+            |
             <router-link to="/page4">Стр 4</router-link>
             |
             <router-link to="/test">Test</router-link>
@@ -45,7 +47,6 @@
     #nav {
         flex: 0 0 auto;
         padding: 30px;
-
         a {
             font-weight: bold;
             color: #2c3e50;
